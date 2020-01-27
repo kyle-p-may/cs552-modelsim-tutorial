@@ -36,3 +36,19 @@ Check `log.out` to make sure that there are no error messages.
 1. To run your simulation, you will need to create a project. Click on File -> New -> Project. You will see the window presented below.Choose a location for your new project andgive it the name. Leave the other settings to their default. This just says that all code will be compiled into the library "work". 
 
 ![Step 1 Figure](https://github.com/kyle-p-may/cs552-modelsim-tutorial/blob/master/figures/step5.png)
+
+2. Click on Add Existing File as shown in the picture. Download test.v and test\_tb.v from Canvas. Navigate to the location where you downloaded test.v and test\_tb.v and add both of those to your project. Keep other settings at their default. Click OK when done. 
+
+![Step 2 Figure](https://github.com/kyle-p-may/cs552-modelsim-tutorial/blob/master/figures/step6.png)
+
+3. You will need to compile the source files first. To do this, right click on test.v, click on Compile, then click on Compile All. You should see messages in the Console window appear in green that the compile was successful. 
+
+![Step 3 Figure](https://github.com/kyle-p-may/cs552-modelsim-tutorial/blob/master/figures/step7.png)
+
+4. To start your simulation, click on Simulate in the Menu Bar, then click Start Simulation. This opens the Start Simulation Window. Click on the plus sign next to work, then click on the plus sign next to arith\_tb. Make sure you select arith\_tb and not arithas we want to simulate the design at the test bench level. Once arith\_tb is highlighted, click OK. 
+
+![Step 4 Figure](https://github.com/kyle-p-may/cs552-modelsim-tutorial/blob/master/figures/step8.png)
+
+5. Click on Simulate → Run → Run-All. You should see “MODELSIM SETUP SUCCESSFUL” 
+
+![Step 5 Figure](https://github.com/kyle-p-may/cs552-modelsim-tutorial/blob/master/figures/step9.png)
