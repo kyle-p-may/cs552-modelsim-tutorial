@@ -1,4 +1,4 @@
-# CS 552 Setup Tutorial
+# CS 552 ModelSim Setup Tutorial
 This document will detail all of the steps required to properly use Modelsim on the CSL computers. We are assuming that you already have a CS account, so if this is not the case, please let us know.
 These steps are from the original tutorial, found in `original/Modelsim_setup_S19_tutorial.pdf`.
 
