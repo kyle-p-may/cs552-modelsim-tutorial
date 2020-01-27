@@ -9,12 +9,31 @@ The steps are as follows:
 4. Use ModelSim to run test code.
 
 ## Software for SSH and X-forwarding
-For Mac and Windows machines, go [here](https://sites.google.com/wisc.edu/modelsim-x-forwarding) for the required steps. Linux machines typically do not require any further software.
+
+### Windows Users:
+1. [Install Xming](https://sourceforge.net/projects/xming/) and run it (if you already have a preferred X server application, you can skip this step)
+2. [Install PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (64-bit) and run it (if you already have a preferred SSH client, you can skip this step)
+	* in the Session tab, set Host Name as **best-linux.cs.wisc.edu**, Port **22**, and Connection type **SSH**
+	* in the Connection > SSH > X11 tab, check the **Enable X11 forwarding** box, set the X display location to **:0.0**, and the X authority file to the path for your Xming installation (likely C:\Program Files (x86)\Xming\Xming.exe)
+3. 	Click Open to start an SSH session, and login using your CS credentials.
+
+### Mac Users:
+1. [Install XQuartz](https://www.xquartz.org/) and run it
+2. In the terminal provided by XQuartz, run the following command:
+
+    $ ssh -XY <CS username>@best-linux.cs.wisc.edu
 
 For Macs, from this point on, if you want to use the GUI for Modelsim, you will need to ssh into the CSL machine using the terminal application provided by XQuartz. Since this terminal is not pleasant looking, I typically ssh in with a native terminal and then only use XQuartz terminal when I need to launch a GUI.
 
-Now, you can ssh on to the CSL machine using the following command.
+### Linux Users:
+1. In a terminal, run the following command:
+
     $ ssh -XY <CS username>@best-linux.cs.wisc.edu
+
+### Extra Resources:
+If you have any trouble setting up your SSH client, go to [this Canvas post](https://canvas.wisc.edu/courses/176728/pages/using-mentor-remotely?module_item_id=2347997) for help.
+
+If you have any trouble with X-forwarding, go to [this website](https://sites.google.com/wisc.edu/modelsim-x-forwarding) for help.
 
 ## Clone this repo
 In order to clone this repo, run the following command in the terminal on the CSL machine (so you have already ssh'd in).
@@ -31,6 +50,11 @@ The following configuration script will setup environment variables in order for
     $ ./config/config.sh # Run configuration
 
 Check `log.out` to make sure that there are no error messages.
+
+Finally, run the following command to update your terminal with these changes (you only need to do this once):
+
+    $ source ~/.bashrc
+
 
 ## Using Modelsim
 1. Run `vsim &`
