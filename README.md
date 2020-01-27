@@ -33,3 +33,6 @@ The following configuration script will setup environment variables in order for
 Check `log.out` to make sure that there are no error messages.
 
 ## Using Modelsim
+1. To run your simulation, you will need to create a project. Click on File -> New -> Project. You will see the window presented below.Choose a location for your new project andgive it the name. Leave the other settings to their default. This just says that all code will be compiled into the library "work". 
+
+![Step 1 Figure](https://github.com/kyle-p-may/cs552-modelsim-tutorial/blob/master/figures/step5.png)
