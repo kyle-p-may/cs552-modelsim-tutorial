@@ -21,14 +21,14 @@ The steps are as follows:
 1. [Install XQuartz](https://www.xquartz.org/) and run it
 2. In the terminal provided by XQuartz, run the following command:
 
-    $ ssh -XY \[CS username\]@best-linux.cs.wisc.edu
+       $ ssh -XY [CS username]@best-linux.cs.wisc.edu
 
 For Macs, from this point on, if you want to use the GUI for Modelsim, you will need to ssh into the CSL machine using the terminal application provided by XQuartz. Since this terminal is not pleasant looking, I typically ssh in with a native terminal and then only use XQuartz terminal when I need to launch a GUI.
 
 ### Linux Users:
 1. In a terminal, run the following command:
 
-    $ ssh -XY \[CS username\]@best-linux.cs.wisc.edu
+       $ ssh -XY [CS username]@best-linux.cs.wisc.edu
 
 ### Extra Resources:
 If you have any trouble setting up your SSH client, go to [this Canvas post](https://canvas.wisc.edu/courses/176728/pages/using-mentor-remotely?module_item_id=2347997) for help.
