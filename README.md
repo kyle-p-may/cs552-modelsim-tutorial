@@ -9,7 +9,7 @@ The steps are as follows:
 4. Use ModelSim to run test code.
 
 ## Software for SSH and X-forwarding
-For Mac and Windows machines, go [here](https://sites.google.com/wisc.edu/modelsim-x-forwarding) for the required steps. For Linux machines, they typically will not require any further software to do this properly.
+For Mac and Windows machines, go [here](https://sites.google.com/wisc.edu/modelsim-x-forwarding) for the required steps. Linux machines typically do not require any further software.
 
 For Macs, from this point on, if you want to use the GUI for Modelsim, you will need to ssh into the CSL machine using the terminal application provided by XQuartz. Since this terminal is not pleasant looking, I typically ssh in with a native terminal and then only use XQuartz terminal when I need to launch a GUI.
 
