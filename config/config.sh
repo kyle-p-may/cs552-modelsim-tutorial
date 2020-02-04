@@ -15,5 +15,5 @@ echo "export SDD_HOME=/s/mentor-2018/@sys/V10.0BSXE/SDD_HOME" >> ~/.bashrc
 echo "export PATH=$PATH:/s/mentor-2018/@sys/bin:/s/mentor-2018/@sys/bin.pclinux:/s/mentor2018/@sys/V10.0BSXE/MGC_HOME.ixl/bin:/s/mentor-2018/@sys/modelsim_dlx/bin" >> ~/.bashrc
 echo "export MGLS_LICENSE_FILE=/s/mentor-2018/etc/cust/mgls/mgc.licenses" >> ~/.bashrc
 
-echo "Finished environment configuration for vsim!"
+echo "Finished environment configuration for vsim"
 } | tee -a log.out
